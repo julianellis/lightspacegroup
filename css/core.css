@@ -1,0 +1,228 @@
+/* = Reset
+----------------------------------------------------------------------------------------------------------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, hr, a, a img, font, img, dd, dl, dt, li, ol, ul, blockquote, fieldset, form, label, legend, table, caption, tr, th, td, figure{margin: 0;padding: 0;border: 0;}
+
+/* == Block Display 
+----------------------------------------------------------------------------------------------------------------- */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display: block;}
+
+/* == Base
+----------------------------------------------------------------------------------------------------------------- */
+body{background: #fff; color: #616365; text-align: center; font-size: 14px; font-family: 'Open Sans', Verdana, Helvetica, sans-serif;}
+
+h1{color: #fff; font-family: 'PT Serif', serif; font-weight: normal; font-size: 3.85em; line-height: 1em; text-shadow: 0px 0px 4px rgba(0,0,0,0.6);}
+h2{font-family: 'PT Serif', serif; color: #c0cedf; font-size: 3.8em; font-weight: normal; margin: 0 0 23px 0; line-height: 0.9em;}
+h3{margin: 0 0 13px 0; font-weight: 300; font-size: 1.7em; color: #3f5674;}
+p{line-height: 1.45em; margin: 0 0 20px 0;}
+img{vertical-align: bottom;}
+h1 span{font-size: 65%; display: block;}
+a{color: #3f5674; font-weight: bold; text-decoration: none;}
+small{color: #3f5674; font-size: 11px;}
+
+/* == Framework
+----------------------------------------------------------------------------------------------------------------- */
+.restrict{width: 960px; margin: 0 auto; text-align: left;}
+
+/* == Header
+----------------------------------------------------------------------------------------------------------------- */
+.siteHead{position: fixed; z-index: 3; top: 0; left: 0; width: 100%; height: 134px; background: url(/img/lens.png);}
+.logo{float: left; padding: 21px; margin-bottom: -34px; background: #fff;}
+.headContact{float: right; color: #3f5674; margin: 15px 0 38px 0; font-size: 1.3em;}
+.headContact a{font-weight: normal;}
+.headContact .divider{color: #c4d1e1;}
+
+/* == Navigation
+----------------------------------------------------------------------------------------------------------------- */
+.priNav{float: right; clear: right; width: 790px;}
+.priNav ul{margin: 0; list-style: none; float: right;}
+.priNav li{display: inline; background: url(/img/nav-divide.png) no-repeat right -2px; padding: 3px 18px 3px 1px;}
+.priNav .end{padding-right: 0; background: none;}
+.priNav a{font-weight: normal; color: #c0cedf; font-family: 'PT Serif', serif; font-size: 1.5em;}
+.priNav a:hover, .priNav a:active{color: #a5b4c7;}
+.priNav a.on{color: #3f5674;}
+
+/* == Hero
+----------------------------------------------------------------------------------------------------------------- */
+.hero{margin-top: 134px; position: relative; z-index: 1;}
+.hero .restrict{position: absolute; z-index: 2; top: 0; left: 50%; margin-left: -480px;}
+.hero h1{position: absolute; top: 90px; left: 0; width: 420px;}
+
+.slideshow{position: relative; z-index: 1;}
+.slideshow .banners img{width: 100%; height: auto;}
+.slideshowReady .banners img{position: absolute; top: 0; left: 0;}
+.scrollPrompt{position: absolute; bottom: 33px; left: 50%; margin-left: -32px;}
+
+/* == Intro
+----------------------------------------------------------------------------------------------------------------- */
+.intro{padding: 70px 0 50px 0;}
+
+/* == Image Strips
+----------------------------------------------------------------------------------------------------------------- */
+.leftImg{float: left; width: 63.43%; height: auto;}
+.rightImg{float: right; width: 36.07%; height: auto;}
+.fullImg{width: 100%; height: auto;}
+
+/* == About
+----------------------------------------------------------------------------------------------------------------- */
+.about{padding: 70px 0;}
+
+/* == People
+----------------------------------------------------------------------------------------------------------------- */
+.people{background: #c0cedf; color: #3b3d40; padding: 50px 0 60px;}
+.people h2{color: #fff;}
+
+/* == Vision
+----------------------------------------------------------------------------------------------------------------- */
+.vision{background: #3f5674; color: #fff; margin-bottom: 9px;}
+.vision h2, .vision h3{color: #c0cedf;}
+.selections{float: left; width: 401px; padding: 70px 0;}
+.thumbs{margin: 0 0 13px 0; list-style: none;}
+.thumbs li{float: left; width: 126px; height: 126px; overflow: hidden; margin: 0 7px 7px 0; position: relative;}
+.thumbs li img{float: left; position: relative; -webkit-transition: left 0.2s ease; -moz-transition: left 0.2s ease; -o-transition: left 0.2s ease; transition: left 0.2s ease;}
+.thumbs li a:hover img, .thumbs li.on img{left: -126px;}
+.thumbs li .loading{position: absolute; top: 0; left: 0;}
+
+.showcase{float: right; width: 400px; height: 520px; position: relative; margin: 84px 0;}
+.showcase figure{position: absolute; top: 0; right: 0;}
+.showcase figure img{width: 525px; height: auto;}
+.showcase .controls{position: absolute; top: 30px; right: 30px;}
+.showcase .controls span{float: left; width: 106px; height: 40px; margin-left: 6px; text-indent: 100%; white-space: nowrap; overflow: hidden; cursor: pointer;}
+.showcase .controls .showBefore{background: url(/img/btns.png) no-repeat 0 -120px;}
+.showcase .controls .showAfter{background: url(/img/btns.png) no-repeat 0 -40px;}
+.showcase .controls .beforeOn{background-position: 0 -80px; cursor: default;}
+.showcase .controls .afterOn{background-position: 0 0; cursor: default;}
+.showcase .loading{position: absolute; top: 50%; left: 50%; margin: -20px 0 0 -20px;}
+
+/* == Projects
+----------------------------------------------------------------------------------------------------------------- */
+.projects{padding: 70px 0; text-align: left;}
+.projects h2{color: #3f5675;}
+.projects .outerFrame{width: 960px; margin: 0 auto; position: relative;}
+.projects .frame{width: 960px; overflow: scroll; position: relative;}
+.projects .items{float: left; width: 4800px; position: relative; margin: 0; list-style: none;}
+.projects .items li{float: left; width: 480px;}
+.projects .items .coverImg{width: 460px; height: 283px;}
+.projects .items h3{margin-top: 20px;}
+.projects .items .overview{width: 460px;}
+.projects .items .odd img, .projects .items .odd .overview{float: right;}
+.projects .scroll{position: absolute; top: 105px; left: 0; cursor: pointer;}
+.projects .scrollRight{left: auto; right: 0;}
+.projects .leftDisabled .scrollLeft, .projects .rightDisabled .scrollRight{opacity: 0.3; cursor: default;}
+
+.lightboxGallery a{display: none;}
+.lightboxGallery a.showMe{display: block;}
+
+/* == Investors
+----------------------------------------------------------------------------------------------------------------- */
+.invest{background: #3f5674; color: #fff; padding: 70px 0; margin-bottom: 9px;}
+.invest h2, .invest h3, .invest a{color: #c0cedf;}
+
+/* == Ventures
+----------------------------------------------------------------------------------------------------------------- */
+.ventures{background: #c0cedf; color: #3b3d40; padding: 70px 0; margin-bottom: 9px;}
+.ventures h2{color: #fff;}
+
+/* == Contact
+----------------------------------------------------------------------------------------------------------------- */
+.contact{height: 677px; position: relative; z-index: 1; padding-top: 9px;}
+.contact .restrict{position: absolute; top: 0; left: 50%; margin-left: -480px;}
+.contact .box{position: absolute; z-index: 2; top: 85px; background: #fff; padding: 30px 110px 10px 30px; -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3); box-shadow: 0 0 10px rgba(0,0,0,0.3);}
+.contact h2{color: #3f5674;}
+#map{width: 100%; height: 677px; background: #e5e3df url(/img/map-loader.gif) no-repeat center center;}
+
+/* == Footer Logo
+----------------------------------------------------------------------------------------------------------------- */
+.siteFoot{padding: 30px 0 35px 0;}
+.footLogo{margin-bottom: 20px;}
+.footContact{float: right; color: #3f5674;}
+.footContact a{font-weight: normal;}
+
+/* = Content Splits
+----------------------------------------------------------------------------------------------------------------- */
+.colsSplit .col{float: left; width: 44%; margin-right: 7%;}
+.colsHalf .col{float: left; width: 45%; margin-right: 10%;}
+.colsThird .col{float: left; width: 30%; margin-right: 5%;}
+.colsFourth .col{float: left; width: 22%; margin-right: 4%;}
+.colsFifth .col{float: left; width: 16.8%; margin-right: 4%;}
+
+.colsSplit .endCol{width: 49%;}
+.cols .endCol{margin-right: 0;}
+
+.colsHalf img, .colsSplit img{max-width: 100%; height: auto;}
+
+/* = Helper Classes
+----------------------------------------------------------------------------------------------------------------- */
+.floatLeft{float: left;}
+.floatRight{float: right;}
+.spaced{padding-top: 10px;}
+.enlarge{font-size: 1.3em;}
+.textRight{text-align: right;}
+.preAmble{color: #3f5674; font-family: 'PT Serif', serif; font-size: 1.65em; line-height: 1.2em;}
+.hide{display: none;}
+
+/* = Clearing
+----------------------------------------------------------------------------------------------------------------- */
+.cols, .restrict, .imageStrip, .thumbs, .projects .frame, .projects .innerFrame{zoom: 1;}
+.cols:after, .restrict:after, .imageStrip:after, .thumbs:after, .projects .frame:after, .projects .innerFrame:after{content: ".";clear: both;display: block;height: 0;visibility: hidden;}
+
+/* = Webfont Loading
+----------------------------------------------------------------------------------------------------------------- */
+.priNav, h1{opacity: 1; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; transition: opacity 0.5s}
+.wf-loading .priNav, .wf-loading h1{opacity: 0; -webkit-transition: none; -moz-transition: none; transition: none;}
+
+/* = Breakpoints
+----------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px){
+	.restrict{width: 1200px;}
+	.priNav{width: auto;}
+	.priNav a{font-size: 1.8em;}
+	.hero .restrict, .contact .restrict{margin-left: -600px;}
+	.showcase { margin: 140px 0; }
+	.showcase, .showcase figure img{width: 770px; height: auto;}
+	.projects .outerFrame, .projects .frame{width: 1200px;}
+	.projects .items{width: 6000px;}
+	.projects .items li{width: 600px;}
+	.projects .items .coverImg{min-height: 349px; width: 568px;}
+	.projects .items .overview{width: 568px;}
+	.projects .scroll{top: 138px;}
+	.thumbs{margin-top: 0;}
+}
+@media screen and (min-width: 1245px){
+	.projects .scroll{left: -22px;}
+	.projects .scrollRight{left: auto; right: -22px;}
+}
+
+
+/* = External Lightbox Styles
+----------------------------------------------------------------------------------------------------------------- */
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CCAttribution-ShareAlike 2.5 Brazil - http://creativecommons.org/licenses/by-sa/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+#jquery-overlay{position: absolute;top: 0;left: 0;z-index: 90;width: 100%;height: 500px;}
+#jquery-lightbox{position: absolute;top: 0;left: 0;width: 100%;z-index: 100;text-align: center;line-height: 0;}
+#jquery-lightbox a img {border: none;}
+#lightbox-container-image-box{position: relative;background-color: #fff;width: 250px;height: 250px;margin: 0 auto;}
+#lightbox-container-image{padding: 10px;}
+#lightbox-loading{position: absolute;top: 40%;left: 0%;height: 25%;width: 100%;text-align: center;line-height: 0;}
+#lightbox-nav{position: absolute;top: 0;left: 0;height: 100%;width: 100%;z-index: 10;}
+#lightbox-container-image-box > #lightbox-nav{left: 0;}
+#lightbox-nav a{outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext{width: 49%;height: 100%;zoom: 1;display: block;}
+#lightbox-nav-btnPrev{left: 0; float: left;}
+#lightbox-nav-btnNext{right: 0; float: right;}
+#lightbox-container-image-data-box{font: 10px Verdana, Helvetica, sans-serif;background-color: #fff;margin: 0 auto;line-height: 1.4em;overflow: auto;width: 100%;padding: 0 10px 0;}
+#lightbox-container-image-data{padding: 0 10px;color: #666;}
+#lightbox-container-image-data #lightbox-image-details{width: 70%;float: left;text-align: left;}	
+#lightbox-image-details-caption{font-weight: bold;}
+#lightbox-image-details-currentNumber{display: block;clear: left;padding-bottom: 1.0em;}			
+#lightbox-secNav-btnClose{width: 66px;float: right;padding-bottom: 0.7em;}
