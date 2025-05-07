@@ -99,7 +99,7 @@ small{color: #3f5674; font-size: 11px;}
 .projects h2{color: #3f5675;}
 .projects .outerFrame{width: 960px; margin: 0 auto; position: relative;}
 .projects .frame{width: 960px; overflow: scroll; position: relative;}
-.projects .items{float: left; width: 4800px; position: relative; margin: 0; list-style: none;}
+.projects .items{float: left; width: 4800px; height: 720px; position: relative; margin: 0; list-style: none;}
 .projects .items li{float: left; width: 480px;}
 .projects .items .coverImg{width: 460px; height: 283px;}
 .projects .items h3{margin-top: 20px;}
